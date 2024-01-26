@@ -15,6 +15,37 @@
         <p class="container__labels--label">Minutes</p>
         <p class="container__labels--label">Seconds</p>
       </div>
+
+      <div class="container__inputs">
+        <input
+          type="number"
+          maxlength="2"
+          class="container__inputs--time hour"
+          placeholder="00"
+          oninput="this.value=this.value.slice(0, maxLength)"
+        />
+        <p class="comtainer__inputs--colon"></p>
+        <input
+          type="number"
+          maxlength="2"
+          class="container__inputs--time minute"
+          placeholder="00"
+          oninput="this.value=this.value.slice(0, maxLength)"
+        />
+        <p class="comtainer__inputs--colon"></p>
+        <input
+          type="number"
+          maxlength="2"
+          class="container__inputs--time second"
+          placeholder="00"
+          oninput="this.value=this.value.slice(0, maxLength)"
+        />
+      </div>
+      <div class="container__btns">
+        <button class="btn">Start</button>
+        <button class="btn">Stop</button>
+        <button class="btn">Reset</button>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
